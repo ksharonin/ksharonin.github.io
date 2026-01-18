@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/fire_emoji.png" />
+     <title>Katrina Sharonin</title>
+    <meta name="description" content="Kat's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Katrina Sharonin</span>
+        <a class="button" href="mailto:ksharonin@berkeley.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">LANDSAT 7: Why does my data have stripes?</div>
+        <div class="body-text"> A dive into LANDSAT 7's history and pernament failure </div>
+        <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
+        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+
+      <div class="project-gallery-content">
+        <div class="gallery-image-container half-width">
+          <img src="../assets/blog-images/20200830_TIF_whole.png" class="gallery-image">
+          <span class="image-caption">LANDSAT 7 Imagery for Tubbs (LE07_L2SP_044033_20171028_20200830_02_T1_SR_B1.TIF)</span>
+        </div>
+        <div class="gallery-image-container half-width">
+          <img src="../assets/blog-images/20200830_TIF_closeup.png" class="gallery-image">
+          <span class="image-caption">Close up (LE07_L2SP_044033_20171028_20200830_02_T1_SR_B1.TIF)</span>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Preface</div>
+        <div class="project-details-content">
+          <div class="body-text"><b>This article is a WIP! Also, I am not a LANDSAT expert, I'm just writing this article when I have time.</b></div>
+          <div class="body-text"> </div>
+          <div class="body-text">Back when I was a freshman in Cal ~2021, I was working for a fire research lab. One of the projects was on the Tubbs Fire, a destructive 2017 fire in Northern California. </div>
+          <div class="body-text">Part of my lab work was to pull satellite data. Depending on the sensor/product, you could use the data to calculate burned area and severity.</div>
+          <div class="body-text">So I downloaded LANDSAT 7 data, opened it, and low and behold there were stripes. </div>
+          <div class="body-text">It's been several years since then, but recently I found an info sheet on LANDSAT tucked away in NIFC's FTP server that mentioned this sensor failure [1] </div>
+          <div class="body-text">I think it's a pretty interesting story, let's take a dive</div>
+        </div>
+
+        <div class="project-gallery-content">
+        <div class="gallery-image-container half-width">
+          <img src="../assets/blog-images/college_stripes.jpg" class="gallery-image">
+        </div>
+      </div>
+
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">What is LANDSAT 7?</div>
+        <div class="project-details-content">
+          <div class="body-text">LANDSAT 7 is part of the long-running LANDSAT family, a series of earth-observing satellites dedicated to science.</div>
+            <div class="gallery-image-container">
+              <img src="../assets/blog-images/LNext_Revised_Timeline_Update_20240215.png" class="gallery-image">
+              <span class="image-caption">LANDSAT Timeline, source [2]</span>
+            </div>
+          <div class="body-text">It's a joint NASA/USGS program, and it's first satellite launched in 1972. Today (2026), the legacy lives on through active satellites (Landsat 8 and 9) and a planned launch (Landsat NEXT) </div>
+          <div class="body-text">To say LANDSAT imagery is multi-purpose is an understatement. Use cases range from species distribution, burn area scars, vegetation density, forest change trends, costal change analysis, and so much more. </div>
+          <div class="body-text">Fast facts:</div>
+          <ul>
+            <li>April 15, 1999: LANDSAT 7 launched on a Delta II rocket from Vandenberg Air Force Base</li>
+            <li>October, 2008: USGS releases all LANDSAT 7 data for free public use</li>
+            <li>June 4, 2025: decommissioned</li>
+          </ul>
+          <div class="body-text">Personally, it's a joy to look at these images and appreciate Earth. USGS agrees, they've even made a collection called "Earth as Art". Check it out here [3] </div>
+            <div class="project-gallery-content">  
+              <div class="gallery-image-container half-width">
+                <img src="../assets/blog-images/desert-ribbons.jpg" class="gallery-image">
+                <span class="image-caption">"Desert Ribbons"</span>
+              </div>
+              <div class="gallery-image-container half-width">
+                <img src="../assets/blog-images/salty-desolation.jpg" class="gallery-image">
+                <span class="image-caption">"Salty Desolation"</span>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">What is the SLC?</div>
+        <div class="project-details-content">
+          <div class="body-text">SLC stands for "Scan Line Corrector". Simply put its a device that accounts for the satellite's movement over Earth as it takes an image.</div>
+          <div class="body-text">Picture this: LANDSAT 7 forms 1 complete file (183 km swath) by doing several "strips" of work left to right, right to left, left to right, and so on. </div>
+          <div class="body-text">Since the satellite is moving, your strips side-to-side actually skew if you keep the sensor pointing down in the same position, see diagram, source [4]</div>
+          <div class="gallery-image-container half-width">
+            <img src="../assets/blog-images/SLC_movement.png" class="gallery-image">
+            <span class="image-caption">Taken from "Image Impact of the Landsat 7 ETM+ Scan Line Corrector Failure" [4]</span>
+          </div>
+          <div class="body-text">So what does the SLC do? It's actually made up of 2 parallel mirrors that act as a periscope for the ETM sensor. If you're like me and forgot what that was, its the tube thing you look through in submarines to see the surface.</div>
+          <div class="body-text">The mirrors rotate at a slow rate to shift the line-of-sight onto a side-to-side track. This helps compensate for satellite movement as the image is taken. See below my cartoon depiction:</div>
+          <div class="gallery-image-container">
+            <img src="../assets/blog-images/scan_story1.jpg" class="gallery-image">
+            <img src="../assets/blog-images/scan_story2.jpg" class="gallery-image">
+            <img src="../assets/blog-images/scan_story3.jpg" class="gallery-image">
+          </div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">What was the 2003 SLC failure?</div>
+        <div class="project-details-content">
+          <div class="body-text">WIP</div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">SLC Recovery Efforts and correction</div>
+        <div class="project-details-content">
+          <div class="body-text">WIP</div>
+        </div>
+      </div>
+
+      <div id="project-details">
+        <div class="subheader-text">Citations</div>
+        <div class="project-details-content">
+          <ul>
+            <li> [1] https://ftp.wildfire.gov/public/nirops/Documents/Landsat_Overview.pdf </li>
+            <li> [2] https://landsat.gsfc.nasa.gov/satellites/timeline/ </li>
+            <li> [3] https://www.usgs.gov/centers/eros/earth-art </li>
+            <li> [4] https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/SLC%20Failure%20Image%20Impact%20Paper%20V1.1.pdf</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://github.com/ksharonin">
+        <image src="../assets/icons/github-mark.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:ksharonin@berkeley.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
