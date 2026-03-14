@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/fire_emoji.png" />
+		<title>Katrina Sharonin</title>
+    <meta name="description" content="Kat's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Katrina Sharonin</span>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./assets/images/beach_pfp.png" class="portfolio-header-image">
+          <a class="no-underline" target="_blank" href="https://calpba.org/">
+          </a>
+        </div>
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">hello world!</span>
+              <div class="body-text">I’m an engineer interested in computer science, wildfires, and satellite tech. Contact me at ksharonin[at]berkeley[dot]edu</div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">See more</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">My name is Kat, I'm a SWE and UC Berkeley alum. My main interest lies in applying CS to satellites via flight and ground software.</div>
+          <div class="body-text">When I'm not coding, you can find me hiking, climbing (5.13a lead goal), or prescribed burning (See my <a href="https://ksharonin.github.io/project-pages/wildfire.html">Wildfire page</a> for more info!)</div>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text"><b>My Work</b></span>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="./assets/images/resume_preview.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Resume</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./project-pages/resume.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/fire_preview.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Wildfire</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./project-pages/wildfire.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/battle_royale_preview.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Art</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./project-pages/art-portfolio.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/granola_images/old_town_bellingham_granola.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Granola Reviews</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./project-pages/granola-reviews.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/pdfs/162_preview.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Cheat sheets</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./project-pages/cheat-sheets.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <div class="project-card">
+            <img src="./assets/blog-images/college_stripes.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Blog</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./blog-pages/blog_home.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
+          <!-- <div class="project-card">
+            <img src="./assets/blog-images/20200830_TIF_closeup.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Kat's Soapbox</div>
+              <div class="body-text project-card-text"></div>
+            </div>
+            <a class="button" href="./blog-pages/blog_home.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://github.com/ksharonin">
+        <image src="./assets/icons/github-mark.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:ksharonin@berkeley.edu">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

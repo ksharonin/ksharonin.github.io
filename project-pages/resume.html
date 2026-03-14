@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" href="../assets/images/fire_emoji.png" />
+     <title>Katrina Sharonin</title>
+    <meta name="description" content="Kat's Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <span class="nav-title">Katrina Sharonin</span>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!-- 
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Resume</div>
+        <!-- <div class="body-text">A small description about the project goes here, get the reader hooked on the project and tell them why they should continue to read this page. Give it a sweet tagline.</div> -->
+        <!-- <image class="project-header-image" src="../assets/images/desktop.jpeg"> -->
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!-- 
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Software Engineer <br> 
+          <i>SpaceX</i> <br>
+          <i>August 2025 - Present</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Makin satellites fly</li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Research Apprentice <br> 
+          <i>Berkeley Fire Lab</i> <br>
+          <i>January 2025 - May 2025</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Supervised by Professor Michael Gollner</li>
+            <li>Developed Fortran wildfire model (ELMFIRE). Implemented support for new geoTIFF projections. Used profiling techniques (perf, Valgrind) to identify and solve performance bottlenecks such as poor caching patterns. </li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Software Engineering Intern <br> 
+          <i>SpaceX</i> <br>
+          <i>September 2024 - December 2024</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Designed and deployed a benchmarking module to track algorithm performance, including detailed logs and visuals.</li>
+            <li>Developed scheduling algorithm features with Python, Docker, and Bazel. Identified and corrected on production severe memory and sorting errors.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Pathways Intern <br> 
+          <i>National Aerospace and Space Administration (NASA) Goddard</i> <br>
+          <i>June 2023 - Present</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li><b><a href="https://github.com/SlideRuleEarth/sliderule/tree/main">SlideRule Earth:</a></b> developed C++ code for a performant HDF5 reader; features overreads, parallelization, lazy execution, and absence of file locks. Implemented dense attribute message search and new version compatibility.</li>
+            <li><b><a href="https://github.com/ksharonin/kerchunkC">KerchunkC:</a></b> developed C++ code to use Zarr reference files for increased reading speed on NetCDF files. High performance computer cluster testing results include increasing data read time speed by 1+ order of magnitude.</li>
+            <li><b>C-SSAAW Module (Cloud-based Satellite Signal Attenuation Assessment from Weather):</b> designed and deployed a proof-of-concept modular program using AWS (Lambda, RDS, Step Functions, s3, CodeBuild, IAM). Forecasts downlink satellite signal quality for near-Earth missions; flags deviations caused by rain/atmospheric attenuation and wind degradation to suggest changes for weekly mission downlink schedules</li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">OSTEM Intern - EIS Team <br> 
+          <i>National Aerospace and Space Administration (NASA) Goddard</i> <br>
+          <i>Jan 2023 - June 2023</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li><b>Fire Event Data Suite (FEDS) algorithm:</b> Developed Python scripting to enable global modeling, with 5+ new wildfire fuel categories and seamless multi-tiff dataset reading (edge-case coverage, s3 pulling, etc.) </li>
+            <li><b><a href="https://github.com/ksharonin/feds-benchmarking">FEDS-PEC (Polygon Evaluation Comparison):</a></b> Proposed, designed, and prototyped benchmarking module for the FEDS fire perimeter algorithm; adapted any two polygon inputs and performed select calculations; persist results for long-term analysis of algorithm vs. stakeholder data (e.g. NIFC, CAL FIRE). JOSS software paper in review.</li>
+            <li><b>NetCDF To Zarr Pipeline:</b> Python and Linux Shell workflows to transform NetCDF files into multi-dimensional Zarr files compatible with s3 cloud storage. Integrated into NASA GISS' Fire Weather Index (FWI) product. </li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">OSTEM Intern - FireSense Team <br> 
+          <i>National Aerospace and Space Administration (NASA) HQ</i> <br>
+          <i>May 2022 - Dec 2022</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li><b>MASTER v. VIIRS Research:</b> developed Python scripting for QGIS to compared MODIS/ASTER (MASTER) thermal instrument 2019 readings against VIIRS FRP metric. Scipting performed quantile classification on VIIRS FRP to generate ascending classes of heat, and then compare with the classes of MASTER. Determined the numeric relationship between time of flyover and accuracy “decay” of FRP-classification</li>
+            <li><a href="https://appliedsciences.nasa.gov/our-impact/story/using-infrared-imaging-used-track-wildfires"> Published article on NASA website about infrared imaging research and applications</a></li>
+            <li><b>NIFC Scraper:</b> iPYNB product for researchers to quickly and efficiently pull wildfire incident files (shp, pdf reports, tifs, etc) from the NIFC FTP server. </li>
+            <li><b>Stakeholder interaction:</b> Pinpointed front-end representation issues of NASA active fire datasets and collaborated with public and private stakeholders to identify external needs and achievable goals.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Research Apprentice<br> 
+          <i><a href="https://firelab.berkeley.edu/">Berkeley Gollner Fire Lab</a></i> <br>
+          <i>Oct 2021 - May 2022</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Geospatial Python scripting in QGIS to automate calculations and correlate fire damage index with structure distance to vegetation. </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subheader-text">Volunteer Work</div>
+      <div id="project-details">
+        <div class="subheader-text">Prescribed Burner (FF2)<br> 
+          <i><a href="https://calpba.org/centralcoastpba">Central Coast Prescribed Fire Association (CCPBA)</a></i> <br>
+          <i>Oct 2023 - Present</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Assist with executing prescribed burns in the Northern/Central CA region as Firefighter Type 2.</li>
+            <li>Trained on drip torch use, firing patterns, holding, hand tool usage, water suppression, fire weather measurements, and radio communication.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Trip Officer and Member<br> 
+          <i>Cal Hiking and Outdoor Society (CHAOS)</i> <br>
+          <i>Aug 2023 - Present</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Plan and complete weekly/monthly trips with team of officers which provide UC Berkeley students access to the outdoors. Locations range from Bay Area to SoCal region.</li>
+            <li>Trained in First Aid/CPR.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Member<br> 
+          <i>Epsilon Eta, Professional Enviornmental Service Fraternity</i> <br>
+          <i>Feburary 2023 - Present</i>
+        </div>
+        <div class="project-details-content">
+          <ul>
+            <li>Volunteer on weekly enviornmental projects including local farm care, invasive plant removal, fire fuel removal, and waste clean up.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subheader-text">Academic Coursework</div>
+
+      <div id="project-details">
+        <div class="subheader-text">Computer Science / Electrical Engineering</div>
+        <div class="project-details-content">
+          <ul>
+            <li> CS 162 - Operating Systems </li>
+            <li> CS 152 - Computer Architecture and Engineering </li>
+            <li> CS 168 - Internet Networking and Protocols </li>
+            <li> EECS 149 - Embedded Systems </li>
+            <li> CS 161 - Computer Security</li>
+            <li> CS 70 - Discrete Math and Probability </li>
+            <li> CS 61C - Machine Structures </li>
+            <li> CS 61B - Data Structures </li>
+            <li> CS 61A - Structure and Interpretation of Computer Programs</li>
+            <li> CS 195 - Social Implications of Computer Technology</li>
+            <li> EECS 16A - Designing Information Devices and Systems I </li>
+            <li> EECS 16B - Designing Information Devices and Systems II </li>
+          </ul>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text"> Other </div>
+        <div class="project-details-content">
+          <ul>
+            <li> MECENG 172 - Wildfire Sciences and Applications </li>
+            <li> EPS 109 - Computer Simulations for Earth and Planetary Sciences </li>
+            <li> GEOG C188 - Geographic Information Systems</li>
+            <li> MATH 53 - Multivariable Calculus</li>
+            <li> ENGIN 26 - Three-Dimensional Modeling for Design</li>
+            <li> PHYS 7A - Physics for Engineers </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!-- 
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram) 
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://github.com/ksharonin">
+        <image src="../assets/icons/github-mark.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:ksharonin@berkeley.edu">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
